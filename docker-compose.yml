@@ -1,0 +1,9 @@
+version: '3'
+services:
+  #docker run -p 8529:8529 -e ARANGO_ROOT_PASSWORD=openSesame arangodb/arangodb:3.12.1
+  graph:
+    image: arangodb/arangodb:3.12.1
+    environment:
+     ARANGO_ROOT_PASSWORD: openSesame
+    ports:
+      - "8529:8529"
